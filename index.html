@@ -439,10 +439,6 @@
 									<li class="divider"></li>
 									<li><a href="#" class="smeta"><i class="icon-file"></i> Смета</a></li>
 									<li><a href="#" class="commercial"><i class="icon-briefcase"></i> Коммерческое предложение</a></li>
-<!--
-									<li class="divider"></li>
-									<li><a href="#" class="print"><i class="icon-print"></i> Печать</a></li>
--->
 								</ul>
 							</li>
 							<li class="divider-vertical"></li>
@@ -498,20 +494,14 @@
 					</fieldset>
 				</form>
 			</div>
-<!--
-		<div id="loader">
-			<img src="data/img/loader.gif" id="load" alt="loader" />
-		</div>
--->
-		<table class="table" id="price">
-			<tfoot>
-				<tr id="full_itog">
-					<th colspan="4" class="align_r">Общая стоимость:</th>
-					<th class="sum_result"></th>
-				</tr>
-			</tfoot>
-		</table>
-
+			<table class="table" id="price">
+				<tfoot>
+					<tr id="full_itog">
+						<th colspan="4" class="align_r">Общая стоимость:</th>
+						<th class="sum_result"></th>
+					</tr>
+				</tfoot>
+			</table>
 		<hr>
 		<div class="continiue">
 			<a class="smeta" href="#">
@@ -521,11 +511,6 @@
 			<a class="commercial" href="#">
 				<i class="icon-briefcase"></i> Составить коммерческое предложение
 			</a>
-<!--
-			<a class="print" id="print_it" href="#">
-				<i class="icon-print"></i> Вывести на печать
-			</a>
--->
 		</div>
 		<footer>
 			<div class="hero-unit">
@@ -542,104 +527,102 @@
 			<p>&copy; АльфаТраст 2012</p>
 		</footer>
 		</div> <!-- /container -->
-
-<!--Modal-->
-
-<div id="ModalSave" class="modal hide fade" style="display: none; ">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">?</button>
-              <h3>Сохранить изменения?</h3>
-            </div>
-            <div class="modal-body">
-              <form class="form-horizontal">
-                  <fieldset>
-                    <div class="control-group">
-                      <label class="control-label" for="saveas">Новое имя:</label>
-                      <div class="controls">
-                        <input type="text" class="input-xlarge" id="saveas" />
-                        <p class="help-block">Введите имя для сохранения текущего документа или выберите существующий</p>
-                      </div>
-                    </div>
-                    <div class="control-group">
-                      <label class="control-label" for="savethis">Сохранить как:</label>
-                      <div class="controls">
-                        <select multiple="multiple" size="12" id="savethis"></select>
-                        <p class="help-block">Выберите нужный файл</p>
-                      </div>
-                    </div>
-                  </fieldset>
-              </form>
-              <p>В дальнейшем вы всегда сможете вернуться к редактированию этого файла через меню «Открыть»</p>
-            </div>
-            <div class="modal-footer">
-              <a href="#" class="btn" data-dismiss="modal">Закрыть</a>
-              <a href="#" class="btn btn-primary" data-dismiss="modal" id="save">Сохранить</a>
-            </div>
-</div>
-          
-<div id="ModalRefresh" class="modal hide fade" style="display: none; ">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">?</button>
-              <h3>Обновить таблицу?</h3>
-            </div>
-            <div class="modal-body">
-            	<h4>Вы действительно желаете обновить таблицу?</h4>
-              <p>Все несохраненные данные будут утеряны и загрузится таблица со стандартными значениями</p>
-            </div>
-            <div class="modal-footer">
-                <a href="#" class="btn" data-dismiss="modal">Отмена</a>
-                <a href="#" class="btn btn-primary" data-dismiss="modal" id="refresh">Сбросить</a>
-            </div>
-</div>
-
-<div id="ModalPost" class="modal hide fade" style="display: none; ">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">?</button>
-              <h3>Отправить на почту?</h3>
-            </div>
-            <div class="modal-body">
-              <form class="form-horizontal">
-                  <fieldset>
-                    <div class="control-group">
-                      <label class="control-label" for="postto">Адрес:</label>
-                      <div class="controls">
-                        <input type="text" class="input-xlarge" id="postto" />
-                        <p class="help-block">Введите e-mail получателя</p>
-                      </div>
-                    </div>
-                  </fieldset>
-              </form>
-              <p>На указанный адрес будет отправлена копия текущего документа (возможность сохранения и дальнейшего редактирования  сохранится)</p>
-            </div>
-            <div class="modal-footer">
-              <a href="#" class="btn" data-dismiss="modal">Закрыть</a>
-              <a href="#" class="btn btn-primary" data-dismiss="modal" id="post">Отправить</a>
-            </div>
-</div>
-
-<div id="ModalOpen" class="modal hide fade" style="display: none; ">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">?</button>
-              <h3>Открыть сохраненный файл?</h3>
-            </div>
-            <div class="modal-body">
-              <form class="form-horizontal">
-                  <fieldset>
-                    <div class="control-group">
-                      <label class="control-label" for="openthis">Открыть:</label>
-                      <div class="controls">
-                        <select multiple="multiple" size="15" id="openthis"></select>
-                        <p class="help-block">Выберите нужный файл</p>
-                      </div>
-                    </div>
-                  </fieldset>
-              </form>
-              <p>В списке представлены все сохраненные файлы. Открытие нового файла автоматически закроет текущий редактируемый.</p>
-            </div>
-            <div class="modal-footer">
-              <a href="#" class="btn" data-dismiss="modal">Закрыть</a>
-              <a href="#" class="btn btn-primary" data-dismiss="modal" id="open">Открыть</a>
-            </div>
-</div>
+		<!--Modal-->
+		<div id="ModalSave" class="modal hide fade" style="display: none; ">
+		            <div class="modal-header">
+		              <button type="button" class="close" data-dismiss="modal">?</button>
+		              <h3>Сохранить изменения?</h3>
+		            </div>
+		            <div class="modal-body">
+		              <form class="form-horizontal">
+		                  <fieldset>
+		                    <div class="control-group">
+		                      <label class="control-label" for="saveas">Новое имя:</label>
+		                      <div class="controls">
+		                        <input type="text" class="input-xlarge" id="saveas" />
+		                        <p class="help-block">Введите имя для сохранения текущего документа или выберите существующий</p>
+		                      </div>
+		                    </div>
+		                    <div class="control-group">
+		                      <label class="control-label" for="savethis">Сохранить как:</label>
+		                      <div class="controls">
+		                        <select multiple="multiple" size="12" id="savethis"></select>
+		                        <p class="help-block">Выберите нужный файл</p>
+		                      </div>
+		                    </div>
+		                  </fieldset>
+		              </form>
+		              <p>В дальнейшем вы всегда сможете вернуться к редактированию этого файла через меню «Открыть»</p>
+		            </div>
+		            <div class="modal-footer">
+		              <a href="#" class="btn" data-dismiss="modal">Закрыть</a>
+		              <a href="#" class="btn btn-primary" data-dismiss="modal" id="save">Сохранить</a>
+		            </div>
+		</div>
+		          
+		<div id="ModalRefresh" class="modal hide fade" style="display: none; ">
+		            <div class="modal-header">
+		              <button type="button" class="close" data-dismiss="modal">?</button>
+		              <h3>Обновить таблицу?</h3>
+		            </div>
+		            <div class="modal-body">
+		            	<h4>Вы действительно желаете обновить таблицу?</h4>
+		              <p>Все несохраненные данные будут утеряны и загрузится таблица со стандартными значениями</p>
+		            </div>
+		            <div class="modal-footer">
+		                <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+		                <a href="#" class="btn btn-primary" data-dismiss="modal" id="refresh">Сбросить</a>
+		            </div>
+		</div>
+		
+		<div id="ModalPost" class="modal hide fade" style="display: none; ">
+		            <div class="modal-header">
+		              <button type="button" class="close" data-dismiss="modal">?</button>
+		              <h3>Отправить на почту?</h3>
+		            </div>
+		            <div class="modal-body">
+		              <form class="form-horizontal">
+		                  <fieldset>
+		                    <div class="control-group">
+		                      <label class="control-label" for="postto">Адрес:</label>
+		                      <div class="controls">
+		                        <input type="text" class="input-xlarge" id="postto" />
+		                        <p class="help-block">Введите e-mail получателя</p>
+		                      </div>
+		                    </div>
+		                  </fieldset>
+		              </form>
+		              <p>На указанный адрес будет отправлена копия текущего документа (возможность сохранения и дальнейшего редактирования  сохранится)</p>
+		            </div>
+		            <div class="modal-footer">
+		              <a href="#" class="btn" data-dismiss="modal">Закрыть</a>
+		              <a href="#" class="btn btn-primary" data-dismiss="modal" id="post">Отправить</a>
+		            </div>
+		</div>
+		
+		<div id="ModalOpen" class="modal hide fade" style="display: none; ">
+		            <div class="modal-header">
+		              <button type="button" class="close" data-dismiss="modal">?</button>
+		              <h3>Открыть сохраненный файл?</h3>
+		            </div>
+		            <div class="modal-body">
+		              <form class="form-horizontal">
+		                  <fieldset>
+		                    <div class="control-group">
+		                      <label class="control-label" for="openthis">Открыть:</label>
+		                      <div class="controls">
+		                        <select multiple="multiple" size="15" id="openthis"></select>
+		                        <p class="help-block">Выберите нужный файл</p>
+		                      </div>
+		                    </div>
+		                  </fieldset>
+		              </form>
+		              <p>В списке представлены все сохраненные файлы. Открытие нового файла автоматически закроет текущий редактируемый.</p>
+		            </div>
+		            <div class="modal-footer">
+		              <a href="#" class="btn" data-dismiss="modal">Закрыть</a>
+		              <a href="#" class="btn btn-primary" data-dismiss="modal" id="open">Открыть</a>
+		            </div>
+		</div><!-- /modal -->
 	</body>
 </html>
